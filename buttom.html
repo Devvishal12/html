@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Specifies the character encoding for the document -->
+    <meta charset="UTF-8">
+    <!-- Ensures the page is responsive and scales correctly on different devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Sets the title of the webpage displayed in the browser tab -->
+    <title>Centered Buttons</title>
+    <!-- Internal CSS defined within the <style> tag -->
+    <style>
+        /* Styles for the body element */
+        body {
+            /* Uses flexbox to arrange child elements (buttons) in a row */
+            display: flex;
+            /* Centers buttons horizontally within the body */
+            justify-content: center;
+            /* Centers buttons vertically within the body */
+            align-items: center;
+            /* Sets the body height to 100% of the viewport height */
+            height: 100vh;
+            /* Sets a light gray background with transparency (alpha channel) */
+            background-color: #f0f0f0b4;
+            /* Adds 20px spacing between flex items (buttons) */
+            gap: 20px;
+            /* Removes default margin to prevent unwanted spacing */
+            margin: 0;
+        }
+
+        /* Styles for the SUBSCRIBE button */
+        .subscribe-button {
+            /* Adds padding: 10px top/bottom, 20px left/right */
+            padding: 10px 20px;
+            /* Sets the font size to 16 pixels */
+            font-size: 16px;
+            /* Sets text color to white */
+            color: white;
+            /* Sets a red background color */
+            background-color: rgb(197, 10, 10);
+            /* Removes the default button border */
+            border: none;
+            /* Rounds the button corners with a 5px radius */
+            border-radius: 5px;
+            /* Changes the cursor to a pointer on hover */
+            cursor: pointer;
+            /* Smoothly transitions background color over 0.3 seconds */
+            transition: background-color 0.3s ease;
+            /* Uses flexbox to center the button's text */
+            display: flex;
+            /* Centers text horizontally within the button */
+            justify-content: center;
+            /* Centers text vertically within the button */
+            align-items: center;
+            /* Ensures padding and border are included in the button's size */
+            box-sizing: border-box;
+        }
+
+        /* Hover effect for the SUBSCRIBE button */
+        .subscribe-button:hover {
+            /* Changes background to a darker red on hover */
+            background-color: rgb(177, 71, 71);
+        }
+
+        /* Focus effect for accessibility (e.g., keyboard navigation) */
+        .subscribe-button:focus {
+            /* Adds a 2px solid red outline around the button */
+            outline: 2px solid rgb(197, 10, 10);
+            /* Offsets the outline by 2px from the button edge */
+            outline-offset: 2px;
+        }
+
+        /* Styles for the JOIN button */
+        .join-button {
+            /* Adds padding: 10px top/bottom, 20px left/right */
+            padding: 10px 20px;
+            /* Sets the font size to 16 pixels */
+            font-size: 16px;
+            /* Sets text color to a blue shade */
+            color: rgb(12, 165, 226);
+            /* Sets a near-white background color */
+            background-color: rgb(253, 255, 253);
+            /* Adds a 1px solid blue border */
+            border: 1px solid rgb(12, 165, 226);
+            /* Rounds the button corners with a 5px radius */
+            border-radius: 5px;
+            /* Changes the cursor to a pointer on hover */
+            cursor: pointer;
+            /* Smoothly transitions background and text color over 0.3 seconds */
+            transition: background-color 0.3s ease, color 0.3s ease;
+            /* Uses flexbox to center the button's text */
+            display: flex;
+            /* Centers text horizontally within the button */
+            justify-content: center;
+            /* Centers text vertically within the button */
+            align-items: center;
+            /* Ensures padding and border are included in the button's size */
+            box-sizing: border-box;
+        }
+
+        /* Hover effect for the JOIN button */
+        .join-button:hover {
+            /* Changes background to blue on hover */
+            background-color: rgb(12, 165, 226);
+            /* Changes text color to white for better contrast */
+            color: white;
+        }
+
+        /* Focus effect for accessibility */
+        .join-button:focus {
+            /* Adds a 2px solid blue outline around the button */
+            outline: 2px solid rgb(12, 165, 226);
+            /* Offsets the outline by 2px from the button edge */
+            outline-offset: 2px;
+        }
+
+        /* Styles for the TWEET button */
+        .tweet-button {
+            /* Adds padding: 10px top/bottom, 20px left/right */
+            padding: 10px 20px;
+            /* Sets the font size to 16 pixels */
+            font-size: 16px;
+            /* Sets text color to white */
+            color: white;
+            /* Makes the text bold */
+            font-weight: bold;
+            /* Sets a blue background color (Twitter-like) */
+            background-color: rgb(29, 161, 242);
+            /* Removes the default button border */
+            border: none;
+            /* Rounds the button corners with a 20px radius for a pill shape */
+            border-radius: 20px;
+            /* Changes the cursor to a pointer on hover */
+            cursor: pointer;
+            /* Smoothly transitions background color over 0.3 seconds */
+            transition: background-color 0.3s ease;
+            /* Uses flexbox to center the button's text */
+            display: flex;
+            /* Centers text horizontally within the button */
+            justify-content: center;
+            /* Centers text vertically within the button */
+            align-items: center;
+            /* Ensures padding and border are included in the button's size */
+            box-sizing: border-box;
+        }
+
+        /* Hover effect for the TWEET button */
+        .tweet-button:hover {
+            /* Changes background to a darker blue on hover */
+            background-color: rgb(26, 145, 218);
+        }
+
+        /* Focus effect for accessibility */
+        .tweet-button:focus {
+            /* Adds a 2px solid blue outline around the button */
+            outline: 2px solid rgb(29, 161, 242);
+            /* Offsets the outline by 2px from the button edge */
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body>
+    <!-- SUBSCRIBE button with red background -->
+    <button class="subscribe-button">SUBSCRIBE</button>
+    <!-- JOIN button with blue border and white background -->
+    <button class="join-button">JOIN</button>
+    <!-- TWEET button with blue background and rounded shape -->
+    <button class="tweet-button">Tweet</button>
+</body>
+</html>
